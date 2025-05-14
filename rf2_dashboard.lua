@@ -289,6 +289,7 @@ local function update(wgt, options)
     if (wgt == nil) then return end
     wgt.options = options
     -- wgt.not_connected_error = "Not connected"
+    resetWidgetValues(wgt)
     build_ui_fancy(wgt)
     return wgt
 end
